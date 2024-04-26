@@ -87,15 +87,6 @@ genie_clin_paad <- genie_clin %>%
 genie_maf <- genie_maf %>% 
   filter(Tumor_Sample_Barcode %in% genie_clin_paad$SAMPLE_ID)
 
-# exclude germline mutations in the analysis
-genie_maf <- genie_maf %>%
-  filter(Chromosome != "X")
-
-genie_maf %>% 
-  mutate(Chromosome = case_when(
-    Chromosome == "23" ~ "X" , 
-    TRUE ~ Chromosome)) -> genie_maf
-
 # adding in the patient information
 genie_maf <- left_join(x = genie_maf, y=genie_clin_paad[,c("PATIENT_ID","SAMPLE_ID")],
                        by = c("Tumor_Sample_Barcode" = "SAMPLE_ID"))
