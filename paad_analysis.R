@@ -132,7 +132,6 @@ colnames(tcga_biospecimen) <- tcga_biospecimen[1,]
 
 tcga_biospecimen <- tcga_biospecimen[-1,]
 
-
 tcga_biospecimen %>% 
   filter(patient.histological_type == "pancreas-adenocarcinoma ductal type") %>% 
   pull(patient.bcr_patient_barcode) %>% 
@@ -165,7 +164,6 @@ all_mafs <- list(maf1 = maf_icgc_PAAD,
                  maf3 = maf_utsw_PAAD, 
                  maf4 = maf_tcga_PAAD, 
                  maf5  = maf_paad_cptac_2021)
-
 
 combined_maf <- data.table::rbindlist(all_mafs, idcol="source",fill=T)
 
