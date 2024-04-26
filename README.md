@@ -3,5 +3,5 @@ This repository contains the code and results related to a letter to the editor 
 
 ## Guide to run the analysis
 
-1. Open and run the `paad_analysis.R` script. Please note that you must aquire the GENIE data first and details on how to do so can be found [here]([https://www.aacr.org/professionals/research/aacr-project-genie/aacr-project-genie-data/]).
+1. Open and run the `paad_analysis.R` script. Please note that you must aquire the GENIE data first and details on how to do so can be found [here](https://www.aacr.org/professionals/research/aacr-project-genie/aacr-project-genie-data/).
 2. Once the analysis is run, load the saved `paad_cesa.rds` into `paad_plotting.R` and run this script to produce the visualizations. 
