@@ -19,7 +19,7 @@ paad_cesa <- load_cesa('paad_cesa.rds')
 results <- paad_cesa$selection$kras
 results$selection_intensity = log10(res$selection_intensity)
 gene_names <- c('KRAS', 'BRAF', 'NRAS', 'IDH1', 'SMAD4', 'TP53', 'CTNNB1', 'CDKN2A.p16INK4a', 'GNAS', 'ARID2', 'PTEN', 
-                'NF2', 'WRN', 'SMAD4', 'PMS2', 'NTRK1', 'EXT1', 'ATRX', 'ROS1', 'PIK3CA', 'MYC') # frequently mutated genes in PAAD described in the original Singh et al. article
+                'NF2', 'WRN', 'PMS2', 'NTRK1', 'ROS1', 'PIK3CA', 'MYC') # frequently mutated genes in PAAD described in the original Singh et al. article
 
 # create and save plot
 paad_plot <- plot_effects(results[gene %in% gene_names],
