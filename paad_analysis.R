@@ -71,7 +71,7 @@ maf_yg = maf_yg[germline_variant_site == F][repetitive_region == F | cosmic_site
 
 # import targeted sequencing dataset
 
-# GENIE
+# GENIE version 13.1
 # The AACR Project GENIE Consortium. AACR Project GENIE: Powering Precision Medicine Through An International Consortium, Cancer Discov. 2017 Aug;7(8):818-831
 
 genie_clin <- read_tsv("source_data/GENIE/data_clinical_sample.txt", comment="#")
