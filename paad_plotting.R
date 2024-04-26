@@ -1,6 +1,6 @@
 # Plotting code for "Alternative MAPK drivers in KRAS WT pancreatic cancer - Letter"
 # Visualize cancer effect sizes and epistatic effects in PAAD
-# Last updated: April 25, 2024
+# Last updated: April 26, 2024
 
 # load libraries
 library(cancereffectsizeR) # using version 2.8.0
